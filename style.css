@@ -294,7 +294,7 @@ body {
     width: 100%;
     background: white;
     line-height: ;
-    color: #03446A;
+    color: #701a75;
     
     font-size: ;
     border-radius: 5px;
@@ -308,8 +308,7 @@ body {
     height: 100%;
     width: 100%;
     background: white;
-    line-height:;
-    color: #03446A;
+    color: #701a75;
     text-align: center;
     font-size: ;
     border-radius: 5px;
@@ -320,7 +319,7 @@ body {
   }
   
   .back {
-    background: #03446A;
+    background: #701a75;
     color: white;
     transform: rotateY( 180deg );
   }
