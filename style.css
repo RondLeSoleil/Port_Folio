@@ -3,13 +3,17 @@
     margin:0;
 }
 :root{
-    --primary-color:#fae8ff;
-    --secondary-color:#212121;
-}
-.dark-theme{
     --primary-color:#000106;
     --secondary-color:#fff;
     --back-img:#701a75;
+    
+}
+.clear-theme{
+    --primary-color:#fae8ff;
+    --secondary-color:#212121;
+    --back-img:#fae8ff;
+    
+    
 }
 
 #icon{
@@ -115,23 +119,6 @@ span{
     color:#701a75;
 }
 
-@media (max-width: 1250px) { 
-    .img-box{
-        width: 45%;
-        height: 80%;
-        position: absolute;
-        bottom:0;
-        right: 100px;
-        display:none;
-    }
-    .hero{
-        height: 130vh;
-        width: 100%;
-        background: var(--primary-color);
-        font-family: sans-serif;
-        position: relative;
-    }
-}
 
 /************** About ********************/
 
@@ -245,10 +232,6 @@ padding: -50px 0 0 0;
 /************PORTFOLIO****************************/
 
    
-body {
-   
-   
-  }
   .all_card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -323,6 +306,16 @@ body {
     color: white;
     transform: rotateY( 180deg );
   }
+  .front p {
+    font-size: 25px;
+  }
+  .back a{
+    font-size: 30px;
+    color:var(--secondary-color);
+    margin-top:130px ;
+   
+  }
+  
      
    @keyframes glissement2 {
      from {
@@ -330,3 +323,108 @@ body {
        
      }
    }
+
+   /***********Contact*************************/
+
+/* General Reset */
+
+/* Body Styling */
+
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left:600px;
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background: #45a049;
+}
+
+
+
+
+
+   
+
+   @media (max-width: 1250px) { 
+    .img-box{
+        width: 45%;
+        height: 80%;
+        position: absolute;
+        bottom:0;
+        right: 100px;
+        display:none;
+    }
+    .hero{
+        height: 130vh;
+        width: 100%;
+        background: var(--primary-color);
+        font-family: sans-serif;
+        position: relative;
+    }
+}
