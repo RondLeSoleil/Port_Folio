@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin:0;
+    font-family: sans-serif;
 }
 :root{
     --primary-color:#000106;
@@ -29,11 +30,10 @@ nav ul{
     height: 100vh;
     width: 100%;
     background: var(--primary-color);
-    font-family: sans-serif;
     position: relative;
 }
 nav{
-    width: 84%;
+    width: 100%;
     margin: auto;
     padding: 20px 0;
     display: flex;
@@ -90,7 +90,7 @@ span{
     height: 100%;
     position: absolute;
     left:50%;
-    bottom: 0;
+    bottom: 100px;
     border-radius: 100%;
     transform: translateX(-50%);
     transition: 1s;
@@ -325,92 +325,23 @@ padding: -50px 0 0 0;
    }
 
    /***********Contact*************************/
-
-/* General Reset */
-
-/* Body Styling */
-
-
-/* Contact Section */
-.contact-section {
+.AllContact{
     display: flex;
-    width: 100%;
-    max-width: 600px;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left:600px;
-}
-
-.contact-section h1 {
-    text-align: center;
-    color: #4CAF50;
-    margin-bottom: 1rem;
-}
-
-.contact-section p {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #666;
-}
-
-/* Contact Form */
-.contact-form {
-    display: flex;
+    align-items: center;
+    align-items: center;
     flex-direction: column;
+    
 }
-
-.form-group {
-    margin-bottom: 1.5rem;
+.AllContact h1{
+    color: #701a75;
 }
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #555;
+.AllContact label{
+    color: #701a75;
+    padding: 20px 0 0 0;
+} 
+.AllContact input{
+    padding: 10px 0 10px  0;
 }
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #333;
-    transition: border-color 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #4CAF50;
-    outline: none;
-}
-
-/* Submit Button */
-.submit-btn {
-    padding: 0.8rem;
-    font-size: 1rem;
-    color: #fff;
-    background: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.submit-btn:hover {
-    background: #45a049;
-}
-
-
-
-
-
-   
-
    @media (max-width: 1250px) { 
     .img-box{
         width: 45%;
@@ -426,5 +357,20 @@ padding: -50px 0 0 0;
         background: var(--primary-color);
         font-family: sans-serif;
         position: relative;
-    }
+    }   
+ 
+    .card {
+    
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+        
+        perspective: 500px;
+        display:flex;
+       justify-content:center;
+       flex-direction: column;
+       align-items: ;
+      }
+      
 }
